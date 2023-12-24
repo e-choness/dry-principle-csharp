@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DryLibrary", "DryLibrary\DryLibrary.csproj", "{829D01F2-04B2-4F39-BF6C-3182621C88F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopUI", "DesktopUI\DesktopUI.csproj", "{A1700B6A-CF9E-4FF0-9725-0B12136C1308}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DryFrameworkLibrary", "DryFrameworkLibrary\DryFrameworkLibrary.csproj", "{0C9D840A-9460-4A16-9E06-76FEC487271E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{829D01F2-04B2-4F39-BF6C-3182621C88F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{829D01F2-04B2-4F39-BF6C-3182621C88F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{829D01F2-04B2-4F39-BF6C-3182621C88F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{829D01F2-04B2-4F39-BF6C-3182621C88F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1700B6A-CF9E-4FF0-9725-0B12136C1308}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1700B6A-CF9E-4FF0-9725-0B12136C1308}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1700B6A-CF9E-4FF0-9725-0B12136C1308}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1700B6A-CF9E-4FF0-9725-0B12136C1308}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C9D840A-9460-4A16-9E06-76FEC487271E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C9D840A-9460-4A16-9E06-76FEC487271E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C9D840A-9460-4A16-9E06-76FEC487271E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C9D840A-9460-4A16-9E06-76FEC487271E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
