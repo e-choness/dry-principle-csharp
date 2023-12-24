@@ -38,6 +38,9 @@
         <GenerateResourceMSBuildArchitecture>CurrentArchitecture</GenerateResourceMSBuildArchitecture>
         <GenerateResourceMSBuildRuntime>CurrentRuntime</GenerateResourceMSBuildRuntime>
     </PropertyGroup>
+    <PropertyGroup>
+        <UseWPF>true</UseWPF>
+    </PropertyGroup>
     <ItemGroup>
         <Reference Include="System"/>
         <Reference Include="System.Core"/>
