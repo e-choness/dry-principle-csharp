@@ -19,6 +19,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\DryFrameworkLibrary\DryFrameworkLibrary.csproj" />
+      <ProjectReference Include="..\DryLibrary\DryLibrary.csproj" />
     </ItemGroup>
 
 </Project>

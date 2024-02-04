@@ -4,7 +4,7 @@ using DryFrameworkLibrary.Services;
 
 namespace DryTests;
 
-public class Tests
+public class ProductProcessorUnitTests
 {
     private IProduct game;
     private ProductProcessor _processor;
@@ -27,7 +27,7 @@ public class Tests
         game.Subtitle = subtile;
         game.TransactionDate = transactionDate;
 
-        var resultID =_processor.GenerateProductId(game);
-        Assert.That(true, $"TheSky{transactionDate}", resultID);
+        var resultId =_processor.GenerateProductId(game);
+        Assert.That(true, $"TheSky{transactionDate}", resultId);
     }
 }
