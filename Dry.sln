@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DryTests", "DryTests\DryTes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncDummyLib", "AsyncDummyLib\AsyncDummyLib.csproj", "{0C9D84EE-FBFC-40F6-8870-E1C83C48843E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncConsole", "AsyncConsole\AsyncConsole.csproj", "{0A400653-520A-4AD2-9EA3-CC393BF2E8D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{0C9D84EE-FBFC-40F6-8870-E1C83C48843E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C9D84EE-FBFC-40F6-8870-E1C83C48843E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C9D84EE-FBFC-40F6-8870-E1C83C48843E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A400653-520A-4AD2-9EA3-CC393BF2E8D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A400653-520A-4AD2-9EA3-CC393BF2E8D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A400653-520A-4AD2-9EA3-CC393BF2E8D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A400653-520A-4AD2-9EA3-CC393BF2E8D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

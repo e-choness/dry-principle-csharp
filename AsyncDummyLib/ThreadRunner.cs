@@ -2,8 +2,9 @@
 
 public class ThreadRunner
 {
-    async Task RunThreadsAsync()
+    public async Task<bool> RunThreadsAsync()
     {
+        bool isFinised = true;
         Thread.CurrentThread.ManagedThreadId.Dump("1");
         var client = new HttpClient();
         Thread.CurrentThread.ManagedThreadId.Dump("2");
@@ -19,5 +20,7 @@ public class ThreadRunner
         Thread.CurrentThread.ManagedThreadId.Dump("4");
         var page = await task;
         Thread.CurrentThread.ManagedThreadId.Dump("5");
+        isFinised = true;
+        return isFinised;
     }
 }

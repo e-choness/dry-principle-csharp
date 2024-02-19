@@ -18,6 +18,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\AsyncDummyLib\AsyncDummyLib.csproj" />
       <ProjectReference Include="..\DryFrameworkLibrary\DryFrameworkLibrary.csproj" />
       <ProjectReference Include="..\DryLibrary\DryLibrary.csproj" />
     </ItemGroup>
