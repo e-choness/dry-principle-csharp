@@ -2,6 +2,8 @@
 
 using AsyncDummyLib;
 
-var threadRunner = new ThreadRunner();
-var isFinished = await threadRunner.RunThreadsAsync();
-Console.WriteLine(isFinished);
+var isFinished = await ThreadRunner.RunThreadsAsync();
+isFinished.Dump();
+
+var tea = await TeaBrewer.MakeTeaAsync();
+tea.Dump();

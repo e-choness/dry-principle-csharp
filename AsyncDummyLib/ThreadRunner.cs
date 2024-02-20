@@ -2,7 +2,7 @@
 
 public class ThreadRunner
 {
-    public async Task<bool> RunThreadsAsync()
+    public static async Task<bool> RunThreadsAsync()
     {
         bool isFinised = true;
         Thread.CurrentThread.ManagedThreadId.Dump("1");
