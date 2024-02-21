@@ -1,3 +1,5 @@
+using ExtensionsLibrary;
+
 namespace AsyncDummyLib;
 
 public class TeaBrewer

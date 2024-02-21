@@ -12,6 +12,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncDummyLib", "AsyncDummy
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncConsole", "AsyncConsole\AsyncConsole.csproj", "{0A400653-520A-4AD2-9EA3-CC393BF2E8D4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkDummyLib", "NetworkDummyLib\NetworkDummyLib.csproj", "{61D28473-34C0-46B1-83CD-23EFDA93706A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionsLibrary", "ExtensionsLibrary\ExtensionsLibrary.csproj", "{391CE5E4-EE48-459D-85A7-FF1C8A67EF5E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +46,13 @@ Global
 		{0A400653-520A-4AD2-9EA3-CC393BF2E8D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A400653-520A-4AD2-9EA3-CC393BF2E8D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A400653-520A-4AD2-9EA3-CC393BF2E8D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61D28473-34C0-46B1-83CD-23EFDA93706A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61D28473-34C0-46B1-83CD-23EFDA93706A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61D28473-34C0-46B1-83CD-23EFDA93706A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61D28473-34C0-46B1-83CD-23EFDA93706A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{391CE5E4-EE48-459D-85A7-FF1C8A67EF5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{391CE5E4-EE48-459D-85A7-FF1C8A67EF5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{391CE5E4-EE48-459D-85A7-FF1C8A67EF5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{391CE5E4-EE48-459D-85A7-FF1C8A67EF5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

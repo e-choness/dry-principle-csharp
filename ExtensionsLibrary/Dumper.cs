@@ -1,5 +1,6 @@
 using Newtonsoft.Json;
 
+namespace ExtensionsLibrary;
 public static class Dumper
 {
     private static string ToPrettyString(this object value)
