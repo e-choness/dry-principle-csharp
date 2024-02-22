@@ -8,6 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\ExtensionsLibrary\ExtensionsLibrary.csproj" />
       <ProjectReference Include="..\NetworkDummyLib\NetworkDummyLib.csproj" />
     </ItemGroup>
 

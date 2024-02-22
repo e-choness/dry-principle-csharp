@@ -1,4 +1,6 @@
-﻿namespace AsyncDummyLib;
+﻿using ExtensionsLibrary;
+
+namespace AsyncDummyLib;
 
 public class ThreadRunner
 {

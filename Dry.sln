@@ -16,7 +16,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkDummyLib", "NetworkD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionsLibrary", "ExtensionsLibrary\ExtensionsLibrary.csproj", "{391CE5E4-EE48-459D-85A7-FF1C8A67EF5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkConsole", "NetworkConsole\NetworkConsole.csproj", "{0D0701CC-634F-4E55-BF19-C38F4E28C8BF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkClientConsole", "NetworkClientConsole\NetworkClientConsole.csproj", "{0D0701CC-634F-4E55-BF19-C38F4E28C8BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkServerConsole", "NetworkServerConsole\NetworkServerConsole.csproj", "{3E6F92B8-5B1A-4850-A9E0-A3D9B7F90159}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -60,5 +62,9 @@ Global
 		{0D0701CC-634F-4E55-BF19-C38F4E28C8BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D0701CC-634F-4E55-BF19-C38F4E28C8BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D0701CC-634F-4E55-BF19-C38F4E28C8BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E6F92B8-5B1A-4850-A9E0-A3D9B7F90159}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E6F92B8-5B1A-4850-A9E0-A3D9B7F90159}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E6F92B8-5B1A-4850-A9E0-A3D9B7F90159}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E6F92B8-5B1A-4850-A9E0-A3D9B7F90159}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
