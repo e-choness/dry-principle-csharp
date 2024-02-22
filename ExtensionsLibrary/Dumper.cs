@@ -14,8 +14,14 @@ public static class Dumper
         return value;
     }
 
-    public static void Dump<T>(this T obj, string value)
+    public static T Dump<T>(this T value, string prefix)
     {
-        Console.WriteLine(value.ToPrettyString());
+        Console.WriteLine(prefix + " " + value.ToPrettyString());
+        return value;
     }
+
+    // public static void Dump<T>(this T obj, string value)
+    // {
+    //     Console.WriteLine(value.ToPrettyString());
+    // }
 }
