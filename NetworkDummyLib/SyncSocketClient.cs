@@ -15,7 +15,7 @@ public class SyncSocketClient
             var hostName = Dns.GetHostName().Dump("Host:");
             var ipHost = Dns.GetHostEntry(hostName);
             var ip = ipHost.AddressList[0];
-            var remoteEp = new IPEndPoint(ip, 453323);
+            var remoteEp = new IPEndPoint(ip, 45323);
 
             var sender = new Socket(ip.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
             try
