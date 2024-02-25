@@ -10,7 +10,8 @@ public class AsyncSocketServer
     public static async Task StartListenerAsync()
     {
         var ipHost = await Dns.GetHostEntryAsync(Dns.GetHostName());
-        var ipAddress = ipHost.AddressList[0];
+        var ipAddress = ipHost.AddressList.FirstOrDefault(address => !address.IsIPv6LinkLocal);
+        // ipAddress.ToString().Dump("Server ip: ");
         var localEndPoint = new IPEndPoint(ipAddress, SharedData.Port);
 
         var listener = new Socket(ipAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp);

@@ -4,4 +4,5 @@ using ExtensionsLibrary;
 using NetworkDummyLib;
 
 "Starting the client...".Dump();
-SyncSocketClient.StartClient();
+// SyncSocketClient.StartClient();
+await AsycnSocketClient.StartClientAsync();
