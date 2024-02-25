@@ -5,4 +5,4 @@ using NetworkDummyLib;
 
 "Starting the client...".Dump();
 // SyncSocketClient.StartClient();
-await AsycnSocketClient.StartClientAsync();
+await AsyncSocketClient.StartClientAsync();

@@ -5,23 +5,24 @@ using ExtensionsLibrary;
 
 namespace NetworkDummyLib;
 
-public class AsycnSocketClient
+public class AsyncSocketClient
 {
     public static async Task StartClientAsync()
     {
         try
         {
             var ipHost = await Dns.GetHostEntryAsync(Dns.GetHostName());
-            var ipAddress = ipHost.AddressList.FirstOrDefault(address => address.IsIPv6LinkLocal);
-            // ipAddress.ToString().Dump("Client ip: ");
+            var ipAddress = ipHost.AddressList[0];
+            ipAddress.ToString().Dump("Client ip: ");
+            
             var remoteEndPoint = new IPEndPoint(ipAddress, SharedData.Port);
 
             using var sender = new Socket(ipAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
             await sender.ConnectAsync(remoteEndPoint);
 
-            sender.RemoteEndPoint.Dump("Connected to: ");
+            sender.RemoteEndPoint.ToString().Dump("Connected to: ");
 
-            var message = $"This is a tiny test.{SharedData.EOFMarker}";
+            var message = $"This is a tiny test.{SharedData.EOFMarker}".Dump("Message content: ");
 
             var byteSent = await sender.SendAsync(Encoding.ASCII.GetBytes(message));
 

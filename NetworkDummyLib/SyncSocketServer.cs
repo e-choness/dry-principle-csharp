@@ -15,6 +15,7 @@ public class SyncSocketServer
 
         var ipHost = Dns.GetHostEntry(Dns.GetHostName());
         var ipAddress = ipHost.AddressList[0];
+        ipAddress.ToString().Dump("Client ip: ");
         var localEndPoint = new IPEndPoint(ipAddress, 43665);
         
         var listener = new Socket(ipAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp);

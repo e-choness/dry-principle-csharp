@@ -15,14 +15,15 @@ public class SyncSocketClient
             var hostName = Dns.GetHostName().Dump("Host:");
             var ipHost = Dns.GetHostEntry(hostName);
             var ip = ipHost.AddressList[0];
+            ip.ToString().Dump("Server ip: ");
             var remoteEp = new IPEndPoint(ip, SharedData.Port);
 
             var sender = new Socket(ip.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
             try
             {
                 sender.Connect(remoteEp);
-                "Socket connected.".Dump();
-                sender.RemoteEndPoint.ToString();
+                sender.RemoteEndPoint.ToString().Dump("Socket connected to: ");
+                
                 var msg = "This is a tiny test.<EOF>"u8.ToArray();
                 var byteSent = sender.Send(msg);
                 var byteRec = sender.Receive(bytes);

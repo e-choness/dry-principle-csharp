@@ -10,8 +10,8 @@ public class AsyncSocketServer
     public static async Task StartListenerAsync()
     {
         var ipHost = await Dns.GetHostEntryAsync(Dns.GetHostName());
-        var ipAddress = ipHost.AddressList.FirstOrDefault(address => !address.IsIPv6LinkLocal);
-        // ipAddress.ToString().Dump("Server ip: ");
+        var ipAddress = ipHost.AddressList[0];
+        ipAddress.ToString().Dump("Server ip: ");
         var localEndPoint = new IPEndPoint(ipAddress, SharedData.Port);
 
         var listener = new Socket(ipAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
@@ -50,7 +50,7 @@ public class AsyncSocketServer
             var sendData = Encoding.ASCII.GetBytes(receivedData);
             await handler.SendAsync(sendData, SocketFlags.None);
 
-            handler.RemoteEndPoint.Dump("Data sent back to: ");
+            handler.RemoteEndPoint.ToString().Dump("Data sent back to: ");
             
             handler.Shutdown(SocketShutdown.Both);
             handler.Close();
