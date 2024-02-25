@@ -23,7 +23,7 @@ public class SyncSocketClient
                 sender.Connect(remoteEp);
                 "Socket connected.".Dump();
                 sender.RemoteEndPoint.ToString();
-                var msg = "This is a tiny test."u8.ToArray();
+                var msg = "This is a tiny test.<EOF>"u8.ToArray();
                 var byteSent = sender.Send(msg);
                 var byteRec = sender.Receive(bytes);
                 $"Echoed test {Encoding.ASCII.GetString(bytes, 0, byteRec)}".Dump();
