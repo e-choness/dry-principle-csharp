@@ -9,13 +9,13 @@ public class SyncSocketClient
 {
     public static void StartClient()
     {
-        byte[] bytes = new byte[1024];
+        var bytes = new byte[1024];
         try
         {
             var hostName = Dns.GetHostName().Dump("Host:");
             var ipHost = Dns.GetHostEntry(hostName);
             var ip = ipHost.AddressList[0];
-            var remoteEp = new IPEndPoint(ip, 43665);
+            var remoteEp = new IPEndPoint(ip, SharedData.Port);
 
             var sender = new Socket(ip.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
             try

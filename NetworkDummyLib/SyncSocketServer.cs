@@ -7,7 +7,7 @@ namespace NetworkDummyLib;
 
 public class SyncSocketServer
 {
-    public static string? data = null;
+    private static string? _data;
 
     public static void StartListener()
     {
@@ -16,6 +16,7 @@ public class SyncSocketServer
         var ipHost = Dns.GetHostEntry(Dns.GetHostName());
         var ipAddress = ipHost.AddressList[0];
         var localEndPoint = new IPEndPoint(ipAddress, 43665);
+        
         var listener = new Socket(ipAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
         
         try
@@ -24,19 +25,19 @@ public class SyncSocketServer
             listener.Listen(10);
             while (true)
             {
-                $"Waiting for a connecton....".Dump();
+                "Server is listening for connections....".Dump();
                 var handler = listener.Accept();
-                data = null;
+                _data = null;
 
                 do
                 {
                     var byteRec = handler.Receive(bytes);
-                    data += Encoding.ASCII.GetString(bytes, 0, byteRec);
-                } while (data.IndexOf("<EOF>", StringComparison.Ordinal) < 0);
+                    _data += Encoding.ASCII.GetString(bytes, 0, byteRec);
+                } while (_data.IndexOf(SharedData.EOFMarker, StringComparison.Ordinal) < 0);
             
-                data.Dump("Text received: ");
+                _data.Dump("Text received: ");
 
-                var msg = Encoding.ASCII.GetBytes(data);
+                var msg = Encoding.ASCII.GetBytes(_data);
                 handler.Send(msg);
                 handler.Shutdown(SocketShutdown.Both);
                 handler.Close();
