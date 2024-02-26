@@ -25,7 +25,7 @@ public class AsyncSocketServer
             while (true)
             {
                 var handler = await listener.AcceptAsync();
-                _ = HandleClientAsync(handler);
+                await HandleClientAsync(handler);
             }
         }
         catch (Exception e)
