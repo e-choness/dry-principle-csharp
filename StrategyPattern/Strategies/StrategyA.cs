@@ -1,6 +1,6 @@
 using ExtensionsLibrary;
 
-namespace StrategyPattern;
+namespace StrategyPattern.Strategies;
 
 public class StrategyA : IStrategy
 {

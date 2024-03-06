@@ -1,14 +1,6 @@
-using ExtensionsLibrary;
+using StrategyPattern.Strategies;
 
-namespace StrategyPattern;
-
-public class StrategyB : IStrategy
-{
-    public void Execute()
-    {
-        "Executing Strategy B...".Dump();
-    }
-}
+namespace StrategyPattern.Contexts;
 
 public class Context
 {
